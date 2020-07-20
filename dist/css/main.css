@@ -182,24 +182,39 @@ main {
       opacity: 0.5;
       border-color: #f5a338;
       transition: all 0.5s ease-out; }
+  .projects .btn, .projects .btn-dark, .projects .btn-light {
+    display: block;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem; }
+    .projects .btn:hover, .projects .btn-dark:hover, .projects .btn-light:hover {
+      background: #f5a338;
+      color: #000; }
+  .projects .btn-dark {
+    background: black;
+    color: #fff; }
+  .projects .btn-light {
+    background: #c4c4c4;
+    color: #333; }
 
-.btn, .btn-dark, .btn-light {
-  display: block;
-  text-align: left;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #f5a338;
-    color: #000; }
-
-.btn-dark {
-  background: black;
-  color: #fff; }
-
-.btn-light {
-  background: #c4c4c4;
-  color: #333; }
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #f5a338; }
+      .boxes div:hover span {
+        color: #fff; }
 
 #main-footer {
   text-align: center;
