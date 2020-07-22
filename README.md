@@ -1,2 +1,0 @@
-# MyPortfolio
-responsive portfolio website
