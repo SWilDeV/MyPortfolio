@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Responsive portfolio design",
   "main": "index.js",
-  "homepage":"https://sean0669.github.io/MyPortfolio",
+  "homepage": "https://sean0669.github.io/MyPortfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o  dist/css/ --recursive",
-    "deploy":"gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o  docs/css/ --recursive",
+    "deploy": "gh-pages -d docs"
   },
   "author": "\"Sean Wilson\"",
   "license": "MIT",
