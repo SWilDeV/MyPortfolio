@@ -3,7 +3,7 @@
 .menu-btn{
     position:absolute;
     z-index: 3;
-    left:35px;
+    left:15px;
     top:35px;
     cursor:pointer;
     @include easeOut;
@@ -36,8 +36,20 @@
     }
 }    
 
-// Menu overlay
+//langage button
+.language-btn{
+    position: absolute;
+    right:35px;
+    top:25px;
 
+    &:hover{
+        a{
+            color:$secondary-color;
+        }
+    }   
+}
+
+// Menu overlay
 .menu{
     position: fixed;
     top: 0;
