@@ -91,6 +91,10 @@ main{
     
     .job-1{
         grid-area: job1;
+
+        a{
+            color:$secondary-color;
+        }
     }
     
     .job-2{
