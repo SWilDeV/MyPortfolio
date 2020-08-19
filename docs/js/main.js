@@ -5,7 +5,9 @@ const menu= document.querySelector('.menu');
 const menuNav= document.querySelector('.menu-nav');
 const menuBranding= document.querySelector('.menu-branding');
 
-const navItems = document.querySelectorAll('.nav-item')
+const navItems = document.querySelectorAll('.nav-item');
+
+const projectItems = document.querySelectorAll('item');
 
 //Set Initial state of menu
 let showMenu = false;
@@ -31,4 +33,12 @@ function toggleMenu(){
         
         showMenu = false;
     }
-}
+};
+
+
+//Fucntion toggleproject
+let showProject = false;
+
+function toggleProject(){
+    projectItems.classList.add('show');
+};

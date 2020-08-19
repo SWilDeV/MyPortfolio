@@ -2,7 +2,7 @@
 @include mediaXl{
     @include background;
     .projects{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -13,7 +13,6 @@
         display: grid;
         text-align:left;
     }
-    
 }
 
 //tablets and small laptops
