@@ -75,8 +75,12 @@ main{
     text-align: left;
     display: grid;
     gap: 30px;
-    grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+    grid-template-areas: 'bioimage bio bio''bio2 bio2 bio2''job1 job2 job3''bio3 bio3 bio3' 'studies1 studies2 studies3';
     grid-template-columns:  repeat(3, 1fr);
+
+    a{
+        color:$secondary-color;
+    }
 
     .bio-image{
         grid-area: bioimage;
@@ -88,13 +92,17 @@ main{
     .bio{
         grid-area: bio;
     }
+
+    .bio-2{
+        grid-area:bio2;
+    }
+
+    .bio-3{
+        grid-area:bio3;
+    }
     
     .job-1{
         grid-area: job1;
-
-        a{
-            color:$secondary-color;
-        }
     }
     
     .job-2{
@@ -109,6 +117,27 @@ main{
         background: lighten($primary-color, 5);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
+        &:hover{
+            transform: scale(1.02);
+        }
+    }
+
+    .studies{
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+        &:hover{
+            transform: scale(1.02);
+        }
+    }
+    .studies-1{
+        grid-area: studies1;
+    }
+    .studies-2{
+        grid-area: studies2;
+    }
+    .studies-3{
+        grid-area: studies3;
     }
 }
 
