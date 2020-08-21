@@ -198,21 +198,13 @@ main{
             position: absolute;
             top: 0;
             background-color: $secondary-color;
+            width:100%;
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
             backface-visibility: hidden;
             transform: rotateY(180deg);
             border: solid #fff 2px;
-            h3{
-                font-size: 1.5vw;
-            }
-            p{
-                font-size: 1vw;
-            }
         }
     }
     //button styles

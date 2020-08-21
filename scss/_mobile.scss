@@ -3,6 +3,28 @@
     @include background;
     .projects{
         grid-template-columns: repeat(3, 1fr);
+        .back{
+            .content{
+                h3{
+                    font-size: 2vw;
+                    text-align:center;
+                    align-items:center;
+                }
+                ul{
+                    position: absolute;
+                    text-align:left;
+                    align-items:left;
+                    top:30%;
+                    left:10%;
+                    padding:0;
+                    margin:0;
+
+                    li{
+                        font-size:1.5vw;
+                    }
+                }   
+            }
+        }
     }
 }
 
@@ -13,6 +35,39 @@
         display: grid;
         text-align:left;
     }
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+        .front{
+            .middle{
+                position:absolute;
+                top:35%;
+                right: 25%;
+                font-size: 4vw;
+            }
+        }
+        .back{
+            .content{
+                h3{
+                    font-size: 3vw;
+                    text-align:center;
+                    align-items:center;
+                }
+                ul{
+                    position: absolute;
+                    text-align:left;
+                    align-items:left;
+                    top:30%;
+                    left:10%;
+                    padding:0;
+                    margin:0;
+
+                    li{
+                        font-size:2vw;
+                    }
+                }   
+            }
+        }
+    }
 }
 
 //tablets and small laptops
@@ -22,13 +77,11 @@
     background-position-x: 50%;
    }
    main#home{
-    h1{
-        margin-top:  60vh;
+        h1{
+            margin-top:  60vh;
+        }
     }
-    
-}
-   
-    
+
     main{
         align-items: center;
         text-align: center;
@@ -86,6 +139,36 @@
 
     .projects{
         grid-template-columns: repeat(2, 1fr);
+        .front{
+            .middle{
+                position:absolute;
+                top:35%;
+                right: 25%;
+                font-size: 4vw;
+            }
+        }
+        .back{
+            .content{
+                h3{
+                    font-size: 3vw;
+                    text-align:center;
+                    align-items:center;
+                }
+                ul{
+                    position: absolute;
+                    text-align:left;
+                    align-items:left;
+                    top:30%;
+                    left:10%;
+                    padding:0;
+                    margin:0;
+
+                    li{
+                        font-size:2vw;
+                    }
+                }   
+            }
+        }
     }
     
 }
@@ -106,6 +189,39 @@
     }
     .projects{
         grid-template-columns: 1fr;
+        .imgItem{
+            .back{
+                .content{
+                    h3{
+                        font-size: 5vw;
+                        text-align:center;
+                        align-items:center;
+                    }
+                    ul{
+                        position: absolute;
+                        text-align:left;
+                        align-items:left;
+                        top:30%;
+                        left:10%;
+                        padding:0;
+                        margin:0;
+
+                        li{
+                            font-size:4vw;
+                        }
+                    }   
+                }
+            }
+            .front{
+                .middle{
+                    position:absolute;
+                    top:35%;
+                    right: 30%;
+                    font-size: 5vw;
+                }
+            }
+            
+        }
     }
     main#contact div{
         display: grid;
