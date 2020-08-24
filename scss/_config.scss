@@ -3,7 +3,7 @@ $secondary-color: rgb(245, 163, 56);//#eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $home-image-small: url(../img/background-small.jpg);
-$background-opacity: 0.25;
+$background-opacity: 0;
 
 @mixin easeOut{
     transition: all 0.5s ease-out;
@@ -16,8 +16,8 @@ $background-opacity: 0.25;
             background-attachment: fixed;
             background-size: cover;
 
-            &:after{
-                content:'';
+             &:after{
+                 content:'';
                 position: absolute;
                 top: 0;
                 right: 0;
