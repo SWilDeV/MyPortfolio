@@ -24,6 +24,9 @@
                     }
                 }   
             }
+            p{
+                font-size:1vw;
+            }
         }
     }
 }
@@ -65,6 +68,9 @@
                         font-size:2vw;
                     }
                 }   
+            }
+            p{
+                font-size:1.5vw;
             }
         }
     }
@@ -168,6 +174,9 @@
                     }
                 }   
             }
+            p{
+                font-size:1.3vw;
+            }
         }
     }
     
@@ -192,6 +201,7 @@
         .imgItem{
             .back{
                 .content{
+                    display: inline-block;
                     h3{
                         font-size: 5vw;
                         text-align:center;
@@ -210,6 +220,9 @@
                             font-size:4vw;
                         }
                     }   
+                }
+                p{
+                    font-size:2.5vw;
                 }
             }
             .front{

@@ -301,7 +301,9 @@ main {
       padding: 0;
       margin: 0; }
       .projects .back .content ul li {
-        font-size: 1.5vw; } }
+        font-size: 1.5vw; }
+    .projects .back p {
+      font-size: 1vw; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   #bg-img {
@@ -340,7 +342,9 @@ main {
       padding: 0;
       margin: 0; }
       .projects .back .content ul li {
-        font-size: 2vw; } }
+        font-size: 2vw; }
+    .projects .back p {
+      font-size: 1.5vw; } }
 
 @media screen and (max-width: 768px) {
   #bg-img {
@@ -406,7 +410,9 @@ main {
       padding: 0;
       margin: 0; }
       .projects .back .content ul li {
-        font-size: 2vw; } }
+        font-size: 2vw; }
+    .projects .back p {
+      font-size: 1.3vw; } }
 
 @media screen and (max-width: 500px) {
   #bg-img {
@@ -428,20 +434,24 @@ main {
     margin-top: 50vh; }
   .projects {
     grid-template-columns: 1fr; }
-    .projects .imgItem .back .content h3 {
-      font-size: 5vw;
-      text-align: center;
-      align-items: center; }
-    .projects .imgItem .back .content ul {
-      position: absolute;
-      text-align: left;
-      align-items: left;
-      top: 30%;
-      left: 10%;
-      padding: 0;
-      margin: 0; }
-      .projects .imgItem .back .content ul li {
-        font-size: 4vw; }
+    .projects .imgItem .back .content {
+      display: inline-block; }
+      .projects .imgItem .back .content h3 {
+        font-size: 5vw;
+        text-align: center;
+        align-items: center; }
+      .projects .imgItem .back .content ul {
+        position: absolute;
+        text-align: left;
+        align-items: left;
+        top: 30%;
+        left: 10%;
+        padding: 0;
+        margin: 0; }
+        .projects .imgItem .back .content ul li {
+          font-size: 4vw; }
+    .projects .imgItem .back p {
+      font-size: 2.5vw; }
     .projects .imgItem .front .middle {
       position: absolute;
       top: 35%;
