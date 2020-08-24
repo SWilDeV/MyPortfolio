@@ -150,17 +150,19 @@ main{
 
     .imgItem{
         position: relative;
+        -webkit-transition: -webkit-transform 2s;
         transition: transform 2s;
+        -webkit-transform-style: preserve-3d;
         transform-style:preserve-3d;
         cursor: pointer;
         .middle{
             position:absolute;
             top:35%;
             right: 25%;
-            //visibility: hidden;
             opacity: 0;
             color: #fff;
             font-size:3vw;
+            -webkit-transition: -webkit-ease .5s;
             transition: .5s ease;
         }
         &:hover{
@@ -185,12 +187,6 @@ main{
 
         .front{
             top:0;
-            
-            // &:hover{
-            //     p{
-            //         visibility: visible;
-            //     }
-            //}
         }
 
         .back{
@@ -202,6 +198,7 @@ main{
             display: flex;
             flex-direction: column;
             backface-visibility: hidden;
+            -webkit-transform: rotateY( 180deg );
             transform: rotateY(180deg);
             border: solid #fff 2px;
         }
