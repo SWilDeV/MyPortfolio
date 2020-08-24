@@ -240,6 +240,7 @@ main {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
