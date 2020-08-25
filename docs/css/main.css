@@ -212,6 +212,7 @@ main {
       transition: .5s ease; }
     .projects .imgItem:hover img {
       opacity: 0.4;
+      -webkit-border-before: -webkit- #f5a338;
       border-color: #f5a338;
       box-shadow: 0px 0px 10px 1px #fff;
       transition: all 0.5s ease-out; }
