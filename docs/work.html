@@ -1,156 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>View my Work</title>
-</head>
-<body id="" >
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
-        <div class="language-btn"><a href="work_fr.html">Français</a></div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+		<title>View my Work</title>
+	</head>
+	<body id="">
+		<header>
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+			</div>
+			<div class="language-btn"><a href="work_fr.html">Français</a></div>
 
-
-        <nav class="menu">
-            <!-- <div class="menu-branding">
+			<nav class="menu">
+				<!-- <div class="menu-branding">
                 <div class="portrait"></div>
             </div> -->
 
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
+				<div class="menu-branding">
+					<div class="portrait"></div>
+				</div>
 
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">
-                        About me
-                    </a>
-                </li>
-                <li class="nav-item current">
-                    <a href="work.html" class="nav-link">
-                        Portfolio
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
-                        How To Reach me
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main id="work">
-        <h1 class="lg-heading">
-            My <span class="text-secondary">Work</span> 
-        </h1>
-        <h2 class="sm-heading">
-        </h2>
-        <div class="projects">
-            <div class="item">
-                <div class="imgItem" onclick="flip(event)">
-                    <div class="front">
-                        <img src="img/projects/Tetris.jpg" alt="Project">
-                        <div class="middle">
-                            <div class="text">Read More</div>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="content">
-                            <h3>Tetris</h3>
-                            <ul>
-                                <li>C++</li>
-                                <li>SDL2</li>
-                                <li>OOP</li>
-                                <li>Currently in progress</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://github.com/sean0669/Tetris_Game" target="_blank" class="btn-light">
-                    <i class="fas fa-eye"></i> Tetris (C++)
-                </a>
-                <a href="https://github.com/sean0669/Tetris_Game" class="btn-dark">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link"> Home </a>
+					</li>
+					<li class="nav-item">
+						<a href="about.html" class="nav-link"> About me </a>
+					</li>
+					<li class="nav-item current">
+						<a href="work.html" class="nav-link"> Portfolio </a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link"> How To Reach me </a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-            <div class="item">
-                <div class="imgItem" onclick="flip(event)">
-                    <div class="front">
-                        <img src="img/projects/YelpCamp.jpg" alt="Project">
-                        <div class="middle">
-                            <div class="text">Read more</div>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="content">
-                            <h3>YelpCamp</h3>
-                            <ul>
-                                <li>FULLSTACK</li>
-                                <li>HTML5 / CSS3/SASS</li>
-                                <li>JAVASCRIPT</li>
-                                <li>NodeJS / ExpressJS</li>
-                                <li>MongoDB</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://secure-mountain-04839.herokuapp.com/" target="_blank" class="btn-light">
-                    <i class="fas fa-eye"></i> YelpCamp (WebSite)
-                </a>
-                <a href="https://github.com/sean0669/LearnWebDev_ColtSteele/tree/master/YELPCamp/V9" class="btn-dark">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
+		<main id="work">
+			<h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
+			<h2 class="sm-heading"></h2>
+			<div class="projects">
+				<div class="item">
+					<div class="imgItem" onclick="flip(event)">
+						<div class="front">
+							<img src="img/projects/Weather.jpg" alt="Project" />
+							<div class="middle">
+								<div class="text">More infos</div>
+							</div>
+						</div>
+						<div class="back">
+							<div class="content">
+								<h3>Weather App</h3>
+								<ul>
+									<li>FULLSTACK</li>
+									<li>FRONTEND: Vue JS</li>
+									<li>BACKEND: Laravel</li>
+									<li>APIs: Openweathermap, mapbox</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-            
+					<a
+						href="https://hidden-sierra-35332.herokuapp.com"
+						target="_blank"
+						class="btn-light"
+					>
+						<i class="fas fa-eye"></i> Weather App
+					</a>
+					<a
+						href="https://github.com/SWilDeV/Weather_App"
+						class="btn-dark"
+						target="_blank"
+					>
+						<i class="fab fa-github"></i> GitHub
+					</a>
+				</div>
+				<div class="item">
+					<div class="imgItem" onclick="flip(event)">
+						<div class="front">
+							<img src="img/projects/YelpCamp.jpg" alt="Project" />
+							<div class="middle">
+								<div class="text">More infos</div>
+							</div>
+						</div>
+						<div class="back">
+							<div class="content">
+								<h3>YelpCamp</h3>
+								<ul>
+									<li>FULLSTACK</li>
+									<li>FRONTEND: Vanilla JAVASCRIPT</li>
+									<li>HTML5/CSS3/SASS</li>
+									<li>BACKEND: NodeJS, ExpressJS</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-            <div class="item">
-                <div class="imgItem" onclick="flip(event)">
-                    <div class="front">
-                        <img src="img/projects/project_honey.jpg" alt="Project">
-                        <div class="middle">
-                            <div class="text">Read more</div>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="content">
-                            <h3>Les Miels de l'Été</h3>
-                            <ul>
-                                <li>FRONTEND</li>
-                                <li>HTML5</li>
-                                <li>CSS3/SASS</li>
-                                <li>JAVASCRIPT</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://sean0669.github.io/Espitalier_Honey/" target="_blank" class="btn-light">
-                    <i class="fas fa-eye"></i> Les Miels de l'Été (WebSite)
-                </a>
-                <a href="https://github.com/sean0669/Espitalier_Honey" class="btn-dark">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-            </div>
-        </div>
-    </main>
+					<a
+						href="https://secure-mountain-04839.herokuapp.com/"
+						target="_blank"
+						class="btn-light"
+					>
+						<i class="fas fa-eye"></i> YelpCamp
+					</a>
+					<a
+						href="https://github.com/sean0669/LearnWebDev_ColtSteele/tree/master/YELPCamp/V9"
+						class="btn-dark"
+						target="_blank"
+					>
+						<i class="fab fa-github"></i> GitHub
+					</a>
+				</div>
 
-    <footer id="main-footer">
-        Copyright &copy; 2021
-    </footer>
+				<div class="item">
+					<div class="imgItem" onclick="flip(event)">
+						<div class="front">
+							<img src="img/projects/ufood1.jpg" alt="Project" />
+							<div class="middle">
+								<div class="text">More infos</div>
+							</div>
+						</div>
+						<div class="back">
+							<div class="content">
+								<h3>UFood: Favorite restaurant App</h3>
+								<h2>FRONTEND</h2>
+								<ul>
+									<li>VueJS</li>
+									<li>Login manager</li>
+									<li>Add/remove favorite Restaurants</li>
+									<li>Follow/unfollow other users</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<a
+						href="https://github.com/SWilDeV/Ufood_Ulaval"
+						target="_blank"
+						class="btn-light"
+					>
+						<i class="fas fa-eye"></i> Ufood (University Project)
+					</a>
+					<a
+						href="https://github.com/SWilDeV/Ufood_Ulaval"
+						class="btn-dark"
+						target="_blank"
+					>
+						<i class="fab fa-github"></i> GitHub
+					</a>
+				</div>
+				<div class="item">
+					<div class="imgItem" onclick="flip(event)">
+						<div class="front">
+							<img src="img/projects/Simudemie1.png" alt="Project" />
+							<div class="middle">
+								<div class="text">More infos</div>
+							</div>
+						</div>
+						<div class="back">
+							<div class="content">
+								<h3>Simudemie</h3>
+								<h2>Disease spread simulator</h2>
+								<ul>
+									<li>Java</li>
+									<li>Mettre</li>
+									<li>Add/remove favorite Restaurants</li>
+									<li>Follow/unfollow other users</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<a
+						href="https://github.com/SWilDeV/Simudemie"
+						target="_blank"
+						class="btn-light"
+					>
+						<i class="fas fa-eye"></i> Simudemie (University Project)
+					</a>
+					<a
+						href="https://github.com/SWilDeV/Simudemie"
+						class="btn-dark"
+						target="_blank"
+					>
+						<i class="fab fa-github"></i> GitHub
+					</a>
+				</div>
 
-    <script src="js/main.js"></script>
-</body>
+				<div class="item">
+					<div class="imgItem" onclick="flip(event)">
+						<div class="front">
+							<img src="img/projects/Tetris.jpg" alt="Project" />
+							<div class="middle">
+								<div class="text">More infos</div>
+							</div>
+						</div>
+						<div class="back">
+							<div class="content">
+								<h3>Tetris</h3>
+								<ul>
+									<li>C++</li>
+									<li>SDL2</li>
+									<li>OOP</li>
+									<li>
+										Conception d'un clone de tetris à partir des bases apprises
+										sur le projet Breakout
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<a
+						href="https://github.com/sean0669/Tetris_Game"
+						target="_blank"
+						class="btn-light"
+					>
+						<i class="fas fa-eye"></i> Tetris (C++)
+					</a>
+					<a
+						href="https://github.com/sean0669/Tetris_Game"
+						class="btn-dark"
+						target="_blank"
+					>
+						<i class="fab fa-github"></i> GitHub
+					</a>
+				</div>
+
+				<div class="item">
+					<div class="imgItem" onclick="flip(event)">
+						<div class="front">
+							<img src="img/projects/Breakout1.jpg" alt="Project" />
+							<div class="middle">
+								<div class="text">More infos</div>
+							</div>
+						</div>
+						<div class="back">
+							<div class="content">
+								<h3>Breakout</h3>
+								<ul>
+									<li>C++</li>
+									<li>SDL2</li>
+									<li>OOP</li>
+									<li>Cours suivi sur Udemy</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<a
+						href="https://github.com/SWilDeV/Learn_Cpp_with_game_development_Vol2"
+						target="_blank"
+						class="btn-light"
+					>
+						<i class="fas fa-eye"></i> Breakout (C++)
+					</a>
+					<a
+						href="https://github.com/SWilDeV/Learn_Cpp_with_game_development_Vol2"
+						class="btn-dark"
+						target="_blank"
+					>
+						<i class="fab fa-github"></i> GitHub
+					</a>
+				</div>
+			</div>
+		</main>
+
+		<footer id="main-footer">Copyright &copy; 2021</footer>
+
+		<script src="js/main.js"></script>
+	</body>
 </html>

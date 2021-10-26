@@ -242,6 +242,7 @@ main {
 	.btn-light {
 		@extend .btn;
 		background: lighten($primary-color, 20);
+		margin-top: 0;
 		color: #fff;
 	}
 }
