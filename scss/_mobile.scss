@@ -1,243 +1,239 @@
 // Widescreens
-@include mediaXl{
-    @include background;
-    .projects{
-        grid-template-columns: repeat(3, 1fr);
-        .back{
-            .content{
-                h3{
-                    font-size: 2vw;
-                    text-align:center;
-                    align-items:center;
-                }
-                ul{
-                    position: absolute;
-                    text-align:left;
-                    align-items:left;
-                    top:30%;
-                    left:10%;
-                    padding:0;
-                    margin:0;
+@include mediaXl {
+	@include background;
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+		.back {
+			.content {
+				h3 {
+					font-size: 2vw;
+					text-align: center;
+					align-items: center;
+				}
+				ul {
+					position: absolute;
+					text-align: left;
+					align-items: left;
+					top: 30%;
+					left: 10%;
+					padding: 0;
+					margin: 0;
 
-                    li{
-                        font-size:1.5vw;
-                    }
-                }   
-            }
-            p{
-                font-size:1vw;
-            }
-        }
-    }
+					li {
+						font-size: 1.5vw;
+					}
+				}
+			}
+			p {
+				font-size: 1vw;
+			}
+		}
+	}
 }
 
 //desktop and laptop
-@include mediaLg{
-    @include background;
-    main#contact div{
-        display: grid;
-        text-align:left;
-    }
-    .projects{
-        grid-template-columns: repeat(2, 1fr);
-        .front{
-            .middle{
-                position:absolute;
-                top:35%;
-                right: 25%;
-                font-size: 4vw;
-            }
-        }
-        .back{
-            .content{
-                h3{
-                    font-size: 3vw;
-                    text-align:center;
-                    align-items:center;
-                }
-                ul{
-                    position: absolute;
-                    text-align:left;
-                    align-items:left;
-                    top:30%;
-                    left:10%;
-                    padding:0;
-                    margin:0;
+@include mediaLg {
+	@include background;
+	main#contact div {
+		display: grid;
+		text-align: left;
+	}
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
+		.front {
+			.middle {
+				position: absolute;
+				top: 35%;
+				right: 25%;
+				font-size: 4vw;
+			}
+		}
+		.back {
+			.content {
+				h3 {
+					font-size: 3vw;
+					text-align: center;
+					align-items: center;
+				}
+				ul {
+					position: absolute;
+					text-align: left;
+					align-items: left;
+					top: 30%;
+					left: 10%;
+					padding: 0;
+					margin: 0;
 
-                    li{
-                        font-size:2vw;
-                    }
-                }   
-            }
-            p{
-                font-size:1.5vw;
-            }
-        }
-    }
+					li {
+						font-size: 2vw;
+					}
+				}
+			}
+			p {
+				font-size: 1.5vw;
+			}
+		}
+	}
 }
 
 //tablets and small laptops
-@include mediaMd{
-    @include background;
-   #bg-img{
-    background-position-x: 50%;
-   }
-   main#home{
-        h1{
-            margin-top:  60vh;
-        }
-    }
+@include mediaMd {
+	@include background;
+	#bg-img {
+		background-position-x: 50%;
+	}
+	main#home {
+		h1 {
+			margin-top: 60vh;
+		}
+	}
 
-    main{
-        align-items: center;
-        text-align: center;
+	main {
+		align-items: center;
+		text-align: center;
 
-        .lg-heading{
-            line-height: 1;
-            margin-bottom: 1rem;
-        }
-    }
+		.lg-heading {
+			line-height: 1;
+			margin-bottom: 1rem;
+		}
+	}
 
-    ul.menu-nav, div.menu-branding{
-        float: none;
-        width: 100%;
-        min-height: 0;
+	ul.menu-nav,
+	div.menu-branding {
+		float: none;
+		width: 100%;
+		min-height: 0;
 
-        &.show{
-            transform: translate3d(0, 0, 0);
-        }
-    }
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
+	}
 
-    .menu-nav{
-        
-        height: 75vh;
-        transform: translate3d(-100%, 0, 0);
-        font-size: 24px;
-    }
+	.menu-nav {
+		height: 75vh;
+		transform: translate3d(-100%, 0, 0);
+		font-size: 24px;
+	}
 
-    .menu-branding{
-        height: 25vh;
-        transform: translate3d(100%, 0, 0);
-    
-        .portrait{
-            background: url(../img/portrait2_small.jpg);
-            width: 150px;
-            height: 150px;
-        }
-    }
+	.menu-branding {
+		height: 25vh;
+		transform: translate3d(100%, 0, 0);
 
-    .about-info{
-        grid-template-areas:
-        'bioimage'
-        'bio'
-        'bio'
-        'bio2'
-        'job1'
-        'job2'
-        'job3'
-        'bio3'
-        'studies1'
-        'studies2'
-        'studies3';
+		.portrait {
+			background: url(../img/portrait2_small.jpg);
+			width: 150px;
+			height: 150px;
+		}
+	}
 
-        grid-template-columns: 1fr;
-    }
+	.about-info {
+		grid-template-areas:
+			"bioimage"
+			"bio"
+			"bio1"
+			"bio2"
+			"job1"
+			"job2"
+			"job3"
+			"bio3"
+			"studies1"
+			"studies2"
+			"studies3";
 
-    .projects{
-        grid-template-columns: repeat(2, 1fr);
-        .front{
-            .middle{
-                position:absolute;
-                top:35%;
-                right: 25%;
-                font-size: 4vw;
-            }
-        }
-        .back{
-            .content{
-                h3{
-                    font-size: 3vw;
-                    text-align:center;
-                    align-items:center;
-                }
-                ul{
-                    position: absolute;
-                    text-align:left;
-                    align-items:left;
-                    top:30%;
-                    left:10%;
-                    padding:0;
-                    margin:0;
+		grid-template-columns: 1fr;
+	}
 
-                    li{
-                        font-size:2vw;
-                    }
-                }   
-            }
-            p{
-                font-size:1.3vw;
-            }
-        }
-    }
-    
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
+		.front {
+			.middle {
+				position: absolute;
+				top: 35%;
+				right: 25%;
+				font-size: 4vw;
+			}
+		}
+		.back {
+			.content {
+				h3 {
+					font-size: 3vw;
+					text-align: center;
+					align-items: center;
+				}
+				ul {
+					position: absolute;
+					text-align: left;
+					align-items: left;
+					top: 30%;
+					left: 10%;
+					padding: 0;
+					margin: 0;
+
+					li {
+						font-size: 2vw;
+					}
+				}
+			}
+			p {
+				font-size: 1.3vw;
+			}
+		}
+	}
 }
 
 //phones
-@include mediaSm{
-    @include background;
-    #bg-img{
-        background-position-x: 43%;
-       }
-       
-    
-    main#home{
-        h1{
-            margin-top:  50vh;
-        }
-        
-    }
-    .projects{
-        grid-template-columns: 1fr;
-        .imgItem{
-            .back{
-                .content{
-                    display: inline-block;
-                    h3{
-                        font-size: 5vw;
-                        text-align:center;
-                        align-items:center;
-                    }
-                    ul{
-                        position: absolute;
-                        text-align:left;
-                        align-items:left;
-                        top:30%;
-                        left:10%;
-                        padding:0;
-                        margin:0;
+@include mediaSm {
+	@include background;
+	#bg-img {
+		background-position-x: 43%;
+	}
 
-                        li{
-                            font-size:4vw;
-                        }
-                    }   
-                }
-                p{
-                    font-size:2.5vw;
-                }
-            }
-            .front{
-                .middle{
-                    position:absolute;
-                    top:35%;
-                    right: 30%;
-                    font-size: 5vw;
-                }
-            }
-            
-        }
-    }
-    main#contact div{
-        display: grid;
-        font-size: 20px;
-    }
+	main#home {
+		h1 {
+			margin-top: 50vh;
+		}
+	}
+	.projects {
+		grid-template-columns: 1fr;
+		.imgItem {
+			.back {
+				.content {
+					display: inline-block;
+					h3 {
+						font-size: 5vw;
+						text-align: center;
+						align-items: center;
+					}
+					ul {
+						position: absolute;
+						text-align: left;
+						align-items: left;
+						top: 30%;
+						left: 10%;
+						padding: 0;
+						margin: 0;
+
+						li {
+							font-size: 4vw;
+						}
+					}
+				}
+				p {
+					font-size: 2.5vw;
+				}
+			}
+			.front {
+				.middle {
+					position: absolute;
+					top: 35%;
+					right: 30%;
+					font-size: 5vw;
+				}
+			}
+		}
+	}
+	main#contact div {
+		display: grid;
+		font-size: 20px;
+	}
 }
