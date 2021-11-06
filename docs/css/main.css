@@ -430,6 +430,10 @@ main {
       font-size: 3vw;
       text-align: center;
       align-items: center; }
+    .projects .back .content h2 {
+      font-size: 3vw;
+      text-align: center;
+      align-items: center; }
     .projects .back .content ul {
       position: absolute;
       text-align: left;
@@ -467,6 +471,10 @@ main {
       display: inline-block; }
       .projects .imgItem .back .content h3 {
         font-size: 5vw;
+        text-align: center;
+        align-items: center; }
+      .projects .imgItem .back .content h2 {
+        font-size: 3vw;
         text-align: center;
         align-items: center; }
       .projects .imgItem .back .content ul {
